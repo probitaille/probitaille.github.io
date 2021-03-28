@@ -1,7 +1,121 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Hello World<h1>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PixiStudio - WebAR Umano with accessories</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+<link href="//fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<!-- Import the component for webAR -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<!-- //Import the component for webAR -->
+</head>
+
+<body>
+<!-- header -->
+<div class="header">
+	<div class="container">
+		<div class="navbar-header">
+			<img style="padding:15px;" src="images/logo_pixistudio.png">
+		</div>
+	</div>
+</div>
+<!-- //header -->
+<hr noshade style="margin:0px;">
+<!-- welcome -->
+<div class="welcome" id="about">
+	<div class="container" style="padding-bottom: 15px;">
+		
+		<div class="col-md-6 agileits_welcome_grid_left">
+
+			<h3>SOLUTIONS INTERACTIVES ET IMMERSIVES</h3>
+
+			<h5>Évoquez le potentiel de votre projet en offrant à vos clients une expérience interactive convaincante grâce à la réalité virtuelle, à la réalité augmentée et aux visionneuses 3D en ligne.</h5>
+
+			<p>
+				Laissez vos clients manipuler votre produit à l’écran pour le voir sous tous les angles. Faites-leur découvrir un environnement entièrement aménagé en 360° pour qu’ils ne ratent aucun détail ou donnez-leur la possibilité de voir votre produit dans son espace avec une précision de détails remarquables avec la réalité augmentée.
+			</p>
+
+		</div>
+
+		<div class="col-md-6 agileits_welcome_grid_right"
+		style="text-align:center;"
+		>
+
+			<model-viewer
+				id="toggle-model"
+				class="img-responsive"
+				style="width:640px;height:350px;margin-bottom:10px;"
+				src="https://pixistudio.com/demos-public/umano_ook_all_ar_2021-03-24/umano_ook_all.glb"
+				ios-src="https://pixistudio.com/demos-public/umano_ook_all_ar_2021-03-24/umano_ook_all.usdz"
+				quick-look-browsers="safari chrome"
+				ar camera-controls auto-rotate
+				alt="A 3D model of a floor pattern">
+				</model-viewer>
+				
+		</div>
+		
+		<div class="clearfix"> </div>
+	</div>
+	
+</div>
+<!-- //welcome -->
+
+<!-- contact -->
+	<div class="contact" id="mail">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>CONTACT</h3>
+			</div>
+			<div class="agile-contact-grids">
+				<div class="col-md-6 agile-contact-left">
+					<div class="address-grid">
+						<h4>NOUS JOINDRE</h4>
+						<ul class="w3_address">
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>4035 rue Saint-Ambroise, suite 308 Montréal, QC,  H4C 2E1, Canada</li>
+							<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:info@example.com">info@pixistudio.com</a></li>
+							<li><i class="fa fa-mobile" aria-hidden="true"></i>+1 514 303-0294</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 agile-contact-right">
+					<div class="agileits-map">
+						<h4>À PROPOS DE PIXI</h4>
+					</div>
+					<div class="map-grid">
+					<p>Nous sommes un studio de design 3D montréalais. Nous combinons créativité et innovation pour réaliser vos projets de marketing en utilisant l’imagerie 3D, l’animation 3D et la réalité virtuelle.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //contact -->
+
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="copyright">
+				<p>© 2020 PIXI Studio </p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+
+</body>
+	
 </html>
